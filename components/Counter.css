@@ -1,0 +1,91 @@
+.counter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #111210;
+  border: 1px solid #2a2b28;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: min(280px, 90vw);
+  margin: 2rem auto;
+  text-align: center;
+  font-family: monospace;
+}
+.counter-card h1 {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #6b6b65;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+  font-family: sans-serif;
+}
+.data {
+  width: 100%;
+  font-weight: 700;
+  color: #f0ede6;
+  line-height: 1;
+  margin: 0 0 2rem;
+  letter-spacing: -2px;
+}
+.btn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.counter-card button {
+  background: #1a1b19;
+  border: 1px solid #2a2b28;
+  color: #888880;
+  border-radius: 8px;
+  padding: 0.65rem 0;
+  font-size: 15px;
+  font-family: monospace;
+  cursor: pointer;
+  width: 100%;
+  transition:
+    background 0.15s,
+    color 0.15s,
+    transform 0.1s;
+}
+.counter-card button:hover {
+  background: #222320;
+  color: #f0ede6;
+}
+.counter-card button:active {
+  transform: scale(0.96);
+}
+.counter-card .btn-accent {
+  color: #818cf8;
+  border-color: #3730a3;
+  background: #13143a;
+}
+.counter-card .btn-accent:hover {
+  background: #818cf8;
+  color: #0c0d25;
+  border-color: #818cf8;
+}
+.counter-card .btn-reset {
+  width: 100%;
+  grid-column: 1 / -1;
+  background: transparent;
+  border: 1px solid #2a2b28;
+  color: #555550;
+  border-radius: 8px;
+  padding: 0.55rem;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition:
+    color 0.15s,
+    border-color 0.15s,
+    background 0.15s;
+}
+.counter-card .btn-reset:hover {
+  background: #2d0f0f;
+  color: #f87171;
+  border-color: #7f1d1d;
+}
