@@ -1,4 +1,4 @@
-import Counter from "../components/Counter";
+import Counter from "./components/Counter.jsx";
 
 function App() {
   return (
@@ -6,7 +6,6 @@ function App() {
       <Counter />
     </>
   );
-  
 }
 
 export default App;
